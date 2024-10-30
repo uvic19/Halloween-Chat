@@ -1,3 +1,5 @@
+Here's the updated README with the working link included:
+
 # Halloween Chat Application
 
 ## Description
@@ -15,6 +17,9 @@ Halloween Chat is a real-time chat application built with React, designed to enh
 - **Zustand:** A small, fast, and scalable bearbones state management solution.
 - **JavaScript:** Main programming language for application logic.
 
+## Live Demo
+Check out the live application [here](https://halloween-chat.netlify.app/).
+
 ## Installation
 1. Clone the repository:
    ```bash
@@ -30,7 +35,7 @@ Halloween Chat is a real-time chat application built with React, designed to enh
    - Add your Firebase configuration in the `lib/firebase.js` file.
 4. Start the application:
    ```bash
-   npm start
+   npm run dev
    ```
 
 ## Usage
