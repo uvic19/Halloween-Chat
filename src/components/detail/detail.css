@@ -1,0 +1,136 @@
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    overflow: hidden;
+    max-width: 100%;
+
+    .user {
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid #dddddd35;
+        width: 100%;
+        box-sizing: border-box;
+    
+        img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        
+        h2{
+            font-size: 16px;
+        }
+
+        p{
+            font-size: 13px;
+            color: #a5a5a5;
+        }
+    }
+
+    .info{
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        overflow: scroll;
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        .option{
+
+            .title{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 14px;
+
+                img{
+                    width: 28px;
+                    height: 28px;
+                    background-color: rgba(17, 25, 40, 0.5);
+                    padding: 10px;
+                    border: 50%;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+            }
+
+            .photos{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .photoItem{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 15px;
+
+                    .photoDetail{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        img{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 5px;
+                            object-fit: cover;
+                        }
+
+                        span{
+                            font-size: 13px;
+                            color: lightgray;
+                            font-weight: 300;
+                        };
+
+                    }
+
+                    .icon{
+                        width: 25px;
+                        height: 25px;
+                        background-color: rgba(17, 25, 40, 0.5);
+                        padding: 8px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        position: relative;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    button{
+        padding: 10px 20px;
+        background-color: rgba(142, 31, 54, 0.553);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+
+
+        &:hover{
+            background-color: rgba(106, 12, 31, 0.553);
+        }
+
+        &.logout{
+            padding: 10px;
+            background-color: #712f7199;
+
+            &:hover{
+            background-color: #4f1c4f99;
+        }
+        }
+    }
+
+}

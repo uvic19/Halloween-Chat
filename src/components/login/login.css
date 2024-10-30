@@ -1,0 +1,88 @@
+.login{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    
+    .item{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            input{
+                padding: 20px;
+                border: none;
+                outline: none;
+                background-color: rgba(17, 25, 40, 0.6);
+                color: white;
+                border-radius: 5px;
+                width: 340px;
+            }
+
+            .password{
+                -webkit-text-security: circle;
+                text-security: circle;
+                padding: 20px;
+                border: none;
+                outline: none;
+                background-color: rgba(17, 25, 40, 0.6);
+                color: white;
+                border-radius: 5px;
+                width: 340px;
+
+            }
+
+            label{
+                margin-top: 50px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                text-decoration: underline;
+                
+                img{
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 10px;
+                    object-fit: cover;
+                    opacity: 0.6;
+                }
+            }
+
+            button{
+                width: 100%;
+                padding: 20px;
+                border: 0;
+                background-color: #a84fa899;
+                border-radius: 5px;
+                cursor: pointer;
+                font-weight: 500;
+                color: white;
+
+                &:disabled{
+                    cursor: not-allowed;
+                    background-color: #a84fa853;
+                }
+            }
+        }
+    }
+
+    .separator{
+        height: 80%;
+        width: 2px;
+        background-color: #dddddd35;
+    }
+
+}
